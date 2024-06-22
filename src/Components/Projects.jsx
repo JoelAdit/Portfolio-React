@@ -1,9 +1,9 @@
 import { PROJECTS } from "../Note/Note";
 import { motion } from "framer-motion";
 
-function projects() {
+function Projects() {
   return (
-    <div className=" border-b border-neutral-900 pb-24 text-white ">
+    <div className=" border-b border-neutral-900 pb-24 mx-5 text-white ">
       <div>
         <motion.h1
           whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ function projects() {
               className="w-full max-w-xl w-3/4 px-4 "
             >
               <h5>{project.title} </h5>
-              <h6 className="my-2 text-neutral-500">{project.description}</h6>
+              <h6 className="my-2  text-neutral-500">{project.description}</h6>
 
               {project.technologies.map(function (tech, index) {
                 return (
@@ -62,6 +62,6 @@ function projects() {
   );
 }
 
-export default projects;
+export default Projects;
 
 //<p className="text-sm pb-1 bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 animate-bounce bg-clip-text text-transparent "></p>

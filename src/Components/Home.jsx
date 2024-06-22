@@ -1,11 +1,12 @@
-import propic from "../Assets/kevinRushProfile.jpg";
+import propic from "../Assets/img_jo_.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 import { FaLinkedin } from "react-icons/fa";
-import { SiIndeed } from "react-icons/si";
+// import { SiIndeed } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import { IoLogoVercel } from "react-icons/io5";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -19,10 +20,10 @@ const container = (delay) => ({
 function Home() {
   return (
     <>
-      <div className="p-5 px-10 border-b border-neutral-900 pb-24 text-white mb-20 mx-6  my-24 ">
+      <div className="p-5  px-15 md:px-20 z-1 border-b border-neutral-900 pb-24 text-white mb-20 my-10 ">
         <div className="flex  flex-wrap justify-center">
-          <div className="w-full lg:w-1/2">
-            <div className="flex flex-col items-center lg:items-start ">
+          <div className="w-full lg:w-1/2 pl-5">
+            <div className="flex flex-col items-center lg:items-start  ">
               <motion.h1
                 variants={container(0)}
                 initial="hidden"
@@ -62,11 +63,16 @@ function Home() {
               animate="visible"
               className="flex gap-5 "
             >
-              <button className=" border border-purple-500  p-2 px-5 rounded-lg  font-medium hover:bg-gradient-to-br from-pink-300 via-slate-500 to-purple-500">
-                Hire Me
+              <button className=" border border-purple-500  p-2 px-5 rounded-lg  font-medium hover:bg-gradient-to-br from-pink-300 via-slate-500 to-purple-500 hover:-translate-y-1 duration-500 ">
+                <a href="https://drive.google.com/file/d/1euKHjkizrfg_m5btEsYE8c-g856zxU-1/view?usp=sharing">
+                  Look My CV
+                </a>
               </button>
-              <button className=" border border-purple-500  p-2 px-5 rounded-lg  font-medium ">
-                Let's Talk
+              <button
+                className=" border border-purple-500  p-2 px-5 rounded-lg  font-medium
+               hover:-translate-y-1  duration-300 "
+              >
+                <Link to={"/letstalk"}>Let's Talk</Link>
               </button>
             </motion.div>
             <motion.div
@@ -76,43 +82,43 @@ function Home() {
               className=" flex flex-warp gap-4"
             >
               <div className=" p-2 my-10 ">
-                <a href="">
-                  <FaLinkedin className="text-3xl  text-blue-500  bg-white border rounded-md " />
+                <a href="https://www.linkedin.com/in/josephadithya/">
+                  <FaLinkedin className="text-3xl  text-blue-500  bg-white border rounded-md hover:-translate-y-1 hover:scale-110 duration-500" />
                 </a>
               </div>
 
-              <div className=" p-2 my-10 ">
+              {/* <div className=" p-2 my-10 ">
                 <a href="">
                   <SiIndeed className="text-3xl  text-blue-400 bg-white  rounded-lg p-0.5 " />
                 </a>
-              </div>
+              </div> */}
 
               <div className=" p-2 my-10 ">
-                <a href="">
-                  <FaGithub className="text-3xl text-yellow-200" />
+                <a href="https://github.com/JoelAdit">
+                  <FaGithub className="text-3xl text-yellow-200  hover:-translate-y-1 hover:scale-110 duration-500" />
                 </a>
               </div>
 
               <div className="  p-2 my-10 ">
                 <a href="">
-                  <FaInstagram className="text-3xl rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-red-500" />
+                  <FaInstagram className="text-3xl rounded-lg bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 hover:-translate-y-1 hover:scale-110 duration-500" />
                 </a>
               </div>
 
               <div className=" p-2 my-10 ">
-                <a href="">
-                  <FaFacebook className="text-3xl text-blue-400" />
+                <a href="https://vercel.com/joeladits-projects">
+                  <IoLogoVercel className="text-3xl text-white hover:-translate-y-1 hover:scale-110 duration-500" />
                 </a>
               </div>
             </motion.div>
           </div>
 
-          <div className=" w-full lg:w-1/2 lg:p-8 flex justify-center">
+          <div className=" w-full lg:w-1/2 lg:p-8 flex justify-center ">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.3 }}
-              className="rounded-lg"
+              className="rounded-2xl"
               src={propic}
               alt="profile"
             />

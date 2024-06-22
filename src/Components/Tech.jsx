@@ -30,7 +30,12 @@ const iconAll = (duration) => ({
 
 function Technologies() {
   return (
-    <div className="border-b border-neutral-900 pb-24 text-white " id="Tech">
+    <div
+      className="border-b border-neutral-900 pb-24 text-white  mx-5 "
+      id="Tech"
+      border
+      border-white
+    >
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
