@@ -8,7 +8,7 @@ function About() {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="md:my-20 md:my-10 text-center text-3xl font-extrabold md:text-4xl   ) {
+        className="md:my-20 text-center text-3xl font-extrabold md:text-4xl   ) {
           
         }"
         id="About"
