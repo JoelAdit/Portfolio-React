@@ -31,7 +31,7 @@ function Home() {
                 variants={container(0)}
                 initial="hidden"
                 animate="visible"
-                className="text-4xl pb-16  md:-tracking-tighter lg:mt-16 pr-5 "
+                className=" text-3xl md:text-4xl pb-16  md:-tracking-tighter lg:mt-16 pr-5 "
               >
                 Hi, I'm Joseph Adithya
               </motion.h1>
