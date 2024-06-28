@@ -44,16 +44,18 @@ function LetsTalk() {
   };
 
   return (
-    <div className="mx-5">
+    <div className="md:mx-5 ">
       <div className="flex flex-wrap justify-between p-5 text-xl font-medium  text-white md:mx-40 ">
-        <h1>Adith.</h1>
+        <h1>
+          <Link to={"/"}>Adith.</Link>
+        </h1>
 
         <button onClick={sidenavHandle}>
           <CiMenuKebab className=" md:hidden " />
 
           {/* SIDENAV-BAR */}
           {sidenav && (
-            <div className="md:hidden  text-white z-50  fixed top-10 right-4 p-2 pt-5 h-1/2 text-2xl  ">
+            <div className="md:hidden  text-white z-50  fixed top-10 right-3 p-3 pt-5 h-1/2 text-2xl  ">
               <ul>
                 <li className="  border-2 p-2 rounded-full border-stone-500 my-4 hover:scale-75  duration-700 hover:bg-gradient-to-t from-pink-600 to-purple-600">
                   <Link to={"/"}>
@@ -83,14 +85,14 @@ function LetsTalk() {
       </div>
 
       {/*    */}
-      <div className=" text-white w-1-2 md:flex flex-wrap justify-center gap-32 ">
+      <div className=" text-white w-1-2 md:flex flex-wrap justify-center gap-10 ">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.8 }}
-          className="py-20 p-10 flex flex-col gap-10 "
+          className="py-20 p-4 md:p-10 flex flex-col gap-10 "
         >
-          <h1 className="text-3xl font-medium bg-gradient-to-r from-pink-400 via-orange-400 to-purple-500 bg-clip-text -tracking-tighter  text-transparent ">
+          <h1 className=" font-semibold text-3xl font-medium bg-gradient-to-r from-pink-400 via-orange-400 to-purple-500 bg-clip-text -tracking-tighter  text-transparent ">
             Hello..! Contact ME
           </h1>
           <p className="text-xl font text-amber-100">
@@ -101,20 +103,20 @@ function LetsTalk() {
             <input
               type="text"
               placeholder="Your Name "
-              className="p-3 border-2  border-amber-300 text-sm font-semibold rounded-lg w-96  bg-transparent focus:outline-fuchsia-400  "
+              className="p-3 border-2  border-amber-300 text-sm font-semibold rounded-lg md:w-96  bg-transparent focus:outline-fuchsia-400 "
               name="name"
               required
             />
             <input
               type="text"
               placeholder="Your Email id "
-              className="p-3  border-2 border-amber-300 text-sm font-semibold rounded-lg my-8 w-96 bg-transparent focus:outline-fuchsia-400"
+              className="p-3  border-2 border-amber-300 text-sm font-semibold rounded-lg my-8 md:w-96 bg-transparent focus:outline-fuchsia-400"
               required
               name="email"
             />
             <textarea
               placeholder="Enter your Message..."
-              className="  p-3 border-2 border-amber-300 text-sm font-semibold rounded-lg w-96 h-36 bg-transparent focus:outline-fuchsia-400"
+              className="  p-3 border-2 border-amber-300 text-sm font-semibold rounded-lg md:w-96 h-36 bg-transparent focus:outline-fuchsia-400"
               name="message"
               required
             ></textarea>
@@ -134,7 +136,7 @@ function LetsTalk() {
           transition={{ duration: 0.8 }}
           className=" flex flex-col justify-center  "
         >
-          <h1 className=" text-3xl p-5 bg-clip-text -tracking-tighter bg-gradient-to-r from-pink-400 via-orange-400 to-purple-500  text-transparent ">
+          <h1 className="font-semibold text-3xl p-5 bg-clip-text -tracking-tighter bg-gradient-to-r from-pink-400 via-orange-400 to-purple-500  text-transparent ">
             Contact information
           </h1>
 

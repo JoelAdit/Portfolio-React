@@ -3,7 +3,7 @@ import Home from "./Components/Home";
 import About from "./Components/About";
 import Technologies from "./Components/Tech";
 import Experience from "./Components/Experience";
-import Projects from "./Components/Projects";
+import Projects from "./Components/Project";
 import Contact from "./Components/Contact";
 
 function App() {

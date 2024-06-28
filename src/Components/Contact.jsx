@@ -3,14 +3,16 @@ import { motion } from "framer-motion";
 function Contact() {
   return (
     <>
-      <div className=" text-white text-3xl text-center my-8">
+      <div className="  text-center text-white ">
         <motion.h1
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 1.5 }}
+          className="text-3xl font-bold md:text-4xl"
         >
-          {" "}
-          Get in Touch
+          <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-purple-500 tracking-wide tracking-wide ">
+            Get in Touch
+          </span>
         </motion.h1>
         <div className="text-sm tracking-wide font-light  my-10 py-4 text-gray-400">
           <motion.p

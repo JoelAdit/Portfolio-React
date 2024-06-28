@@ -3,14 +3,16 @@ import { motion } from "framer-motion";
 
 function Experience() {
   return (
-    <div className="border-b border-neutral-900 pb-24 text-white mb-20 mx-8 ">
+    <div className="px-15 md:px-20 z-1 md:pb-20 text-white my-10 md:mb-20 ">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-3xl font-extrabold text-gray-900 dark:text-white md:text-4xl tracking-wide"
       >
-        Experience
+        <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-purple-500">
+          Experience
+        </span>
       </motion.h1>
 
       <div>

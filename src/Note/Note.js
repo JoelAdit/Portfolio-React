@@ -34,12 +34,56 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Trip-Adviser Website",
-    image: project1,
+    title: "Portfolio",
+    image: project6,
     description:
-      "Its a Clone project Exactly Look Like from Original website with features like places listing overall look mirror.",
-    technologies: ["HTML", "CSS"],
+      "This current viewing  personal portfolio website designed to showcase my work, skills, and achievements. the site provides a professional and visually appealing platform to present ma projects and experiences.The website for managing  projects, with features and progress tracking,",
+    technologies: ["React", "Tailwind-CSS", "Frame Motion"],
+    Link: (
+      <a href="https://portfolio-react-bice-tau.vercel.app/">
+        {" "}
+        <MdAdsClick />{" "}
+      </a>
+    ),
   },
+  {
+    title: "Bulk Mail",
+    image: project5,
+    description:
+      "This project is a bulk email sender that allows users to write a single email and send it to multiple recipients ",
+    technologies: ["Tailwind-CSS", "React", "Express", "MongoDB"],
+    Link: (
+      <a href="https://bulk-mail-tau.vercel.app/">
+        {" "}
+        <MdAdsClick />{" "}
+      </a>
+    ),
+  },
+  {
+    title: "e-Commerce site for 'Time-to-Wear' ",
+    image: project4,
+    description:
+      "This project is a e-commerce website dedicated to selling dresses. the website provides users with a seamless shopping experience, showcasing a variety of dress collections and offering essential e-commerce functionalities.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    Link: (
+      <a href="https://joeladit.github.io/TimeToWear/">
+        <MdAdsClick />{" "}
+      </a>
+    ),
+  },
+  {
+    title: "e-Commerce site for 'Green-Plants' ",
+    image: project3,
+    description:
+      "This project is a website showcasing the offerings of Green Pot Plants, a virtual plant nursery.the website provides users with an immersive experience to explore various plants and gardening products.",
+    technologies: ["React", "Tailwind", "JavaScript"],
+    Link: (
+      <a href="https://joeladit.github.io/GreenPlants--Tailwind-/">
+        <MdAdsClick />{" "}
+      </a>
+    ),
+  },
+
   {
     title: "E-Learning Website",
     image: project2,
@@ -48,38 +92,22 @@ export const PROJECTS = [
     technologies: ["React"],
     Link: (
       <a href="https://joeladit.github.io/Udemy_clone/">
-        {" "}
         <MdAdsClick />{" "}
       </a>
     ),
   },
+
   {
-    title: "e-Commerce site for 'Nature Pot' ",
-    image: project3,
+    title: "Trip-Adviser Website(Clone)",
+    image: project1,
     description:
-      "This project is a website showcasing the offerings of Green Pot Plants, a virtual plant nursery.the website provides users with an immersive experience to explore various plants and gardening products.",
-    technologies: ["HTML", "React", "Tailwind", "JavaScript"],
-  },
-  {
-    title: "e-Commerce site for 'Wear Your Comfort' ",
-    image: project4,
-    description:
-      "This project is a e-commerce website dedicated to selling dresses. the website provides users with a seamless shopping experience, showcasing a variety of dress collections and offering essential e-commerce functionalities.",
-    technologies: ["HTML", "Tailwind", "React", "JavaScript"],
-  },
-  {
-    title: "Bulk Mail",
-    image: project5,
-    description:
-      "This project is a bulk email sender that allows users to write a single email and send it to multiple recipients ",
-    technologies: ["HTML", "Tailwind-CSS", "React", "Express", "MongoDB"],
-  },
-  {
-    title: "Portfolio",
-    image: project6,
-    description:
-      "This current viewing  personal portfolio website designed to showcase my work, skills, and achievements. the site provides a professional and visually appealing platform to present ma projects and experiences.The website for managing  projects, with features and progress tracking,",
-    technologies: ["React", "Tailwind-CSS", "Frame Motion"],
+      "Its a Clone project Exactly Look Like from Original website with features like places listing overall look mirror.",
+    technologies: ["HTML", "CSS"],
+    Link: (
+      <a href="https://joeladit.github.io/Trip-Advisor/ ">
+        <MdAdsClick />{" "}
+      </a>
+    ),
   },
 ];
 

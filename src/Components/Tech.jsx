@@ -1,4 +1,4 @@
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
@@ -31,8 +31,8 @@ const iconAll = (duration) => ({
 function Technologies() {
   return (
     <div
-      className="border-b border-neutral-900 pb-24 text-white  mx-5 "
       id="Tech"
+      className=" px-15 md:px-20 md:pb-20 text-white md:mb-20  border border-transparent"
       border
       border-white
     >
@@ -40,9 +40,11 @@ function Technologies() {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className=" my-20 text-center text-4xl font-medium pb-7 "
+        className=" my-20 text-center  text-3xl font-extrabold md:text-4xl "
       >
-        Technologies
+        <span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-purple-500 tracking-wide">
+          Technologies
+        </span>
       </motion.h1>
 
       <motion.div

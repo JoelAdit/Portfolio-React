@@ -20,7 +20,10 @@ const container = (delay) => ({
 function Home() {
   return (
     <>
-      <div className="p-5  px-15 md:px-20 z-1 border-b border-neutral-900 pb-24 text-white mb-20 my-10 ">
+      <div
+        className="px-15 md:px-20 md:pb-20 md:mx-10  text-white my-10 pt-5 border-transparent   "
+        id="Home"
+      >
         <div className="flex  flex-wrap justify-center">
           <div className="w-full lg:w-1/2 pl-5">
             <div className="flex flex-col items-center lg:items-start  ">
@@ -28,7 +31,7 @@ function Home() {
                 variants={container(0)}
                 initial="hidden"
                 animate="visible"
-                className=" text-4xl pb-16 font-light tracking-tighter lg:mt-16"
+                className="text-4xl pb-16 font-thin tracking-tighter lg:mt-16"
               >
                 Hi, I'm Joseph Adithya
               </motion.h1>
@@ -118,7 +121,7 @@ function Home() {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.3 }}
-              className="rounded-2xl"
+              className="rounded-3xl p-5"
               src={propic}
               alt="profile"
             />
