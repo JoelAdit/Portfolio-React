@@ -31,7 +31,7 @@ function Home() {
                 variants={container(0)}
                 initial="hidden"
                 animate="visible"
-                className="text-4xl pb-16 font-extralight tracking-tighter lg:mt-16 "
+                className="text-4xl pb-16 font- -tracking-tighter lg:mt-16 pr-5 "
               >
                 Hi, I'm Joseph Adithya
               </motion.h1>
