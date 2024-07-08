@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="sticky top-0 z-50   ">
+      <div className="sticky top-0  z-50   ">
         <div className="flex justify-between p-5 text-xl font-medium  text-white md:mx-16 ">
           <h1>Adith.</h1>
 

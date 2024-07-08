@@ -67,7 +67,10 @@ function Home() {
               className="flex gap-5 "
             >
               <button className=" border border-purple-500  p-2 px-5 rounded-lg  font-medium hover:bg-gradient-to-br from-pink-300 via-slate-500 to-purple-500 hover:-translate-y-1 duration-500 ">
-                <a href="https://drive.google.com/file/d/1euKHjkizrfg_m5btEsYE8c-g856zxU-1/view?usp=sharing">
+                <a
+                  href="https://drive.google.com/file/d/1euKHjkizrfg_m5btEsYE8c-g856zxU-1/view?usp=sharing"
+                  className="outline-0"
+                >
                   Look My CV
                 </a>
               </button>
@@ -75,7 +78,9 @@ function Home() {
                 className=" border border-purple-500  p-2 px-5 rounded-lg  font-medium
                hover:-translate-y-1  duration-300 "
               >
-                <Link to={"/letstalk"}>Let's Talk</Link>
+                <Link to={"/letstalk"} className="outline-0">
+                  Let's Talk
+                </Link>
               </button>
             </motion.div>
             <motion.div
@@ -127,7 +132,6 @@ function Home() {
             />
           </div>
         </div>
-        
       </div>
     </>
   );
